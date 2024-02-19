@@ -23,5 +23,9 @@ pip install -r requirements.txt
 ## Run server
 
 ```shell
-python app.py
+cd app/flask
+```
+
+```shell
+python __init__.py
 ```
