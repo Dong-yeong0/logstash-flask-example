@@ -1,0 +1,20 @@
+{
+    "version": "0.1.0",
+    "configurations": [
+        {
+            "cwd": "${workspaceRoot}/flask/app",
+            "name": "flask test",
+            "type": "python",
+            "request": "launch",
+            "module": "Flask",
+            "env": {},
+            "args": [
+                "run",
+                "--no-debugger",
+                "--host=0.0.0.0"
+            ],
+            "jinja": true
+        },
+    ]
+}
+
