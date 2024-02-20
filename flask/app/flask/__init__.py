@@ -3,7 +3,10 @@ from flask import (
     Flask
 )
 from flask_cors import CORS
-import logging
+import os
+import sys
+sys.path.append(os.path.dirname(os.getcwd()))
+from packages.logger import create_logger
 from flask_restx import Api
 from apis import (
     test,
@@ -18,8 +21,7 @@ api = Api(
     doc="/api/test",
 )
 
-
-app_logger = logging.getLogger("audit")
+app_logger = create_logger("logstash-flask-test")
 app.logger = app_logger
 
 CORS(app, supports_credentials=True)
