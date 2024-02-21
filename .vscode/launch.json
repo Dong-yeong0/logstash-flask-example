@@ -1,20 +1,21 @@
 {
-    "version": "0.1.0",
+    "version": "0.2.0",
     "configurations": [
         {
             "cwd": "${workspaceRoot}/flask/app",
-            "name": "flask test",
+            "name": "Flask test",
             "type": "python",
             "request": "launch",
-            "module": "Flask",
-            "env": {},
+            "module": "flask",
+            "env": {
+                "FLASK_APP": "core",
+            },
             "args": [
                 "run",
                 "--no-debugger",
-                "--host=0.0.0.0"
+                "--host=0.0.0.0",
             ],
-            "jinja": true
+            "jinja": false
         },
     ]
 }
-
