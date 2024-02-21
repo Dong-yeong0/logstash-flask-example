@@ -12,3 +12,4 @@ tzlocal
 python-json-logger
 python-logstash
 python3-logstash
+-e "packages"
