@@ -17,3 +17,9 @@ and
 ```shell
 docker-compose up -d
 ```
+
+## Remove
+
+```shell
+docker-compose down -v --rmi all
+```
